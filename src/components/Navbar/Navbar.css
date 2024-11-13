@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100wh;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(82, 189, 148, 0.2) 16.13%, #FFFFFF 100%);
+
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 0px 0px #E4E5E8 inset;
+    padding: 15px 7%;
+
+}
+.logo{
+    
+    cursor: pointer;
+    width: 130.38px;
+   height: 26px;
+   top: 8px;
+   left: 62px;
+   gap: 0px;
+   opacity: 0px;
+
+}
+
+ul{
+flex: 1;
+list-style: none;
+text-align: center;
+}
+ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    cursor: pointer;
+    font-family: Inter;
+font-size: 15px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+ul li:hover{
+    color: #480ACC;
+}
+
+.button-container {
+    display: flex;
+    gap: 12px; /* Space between buttons */
+    left: 1577px;
+}
+
+.register-btn {
+    width: 113px;
+    height: 48px;
+    padding: 12px 24px;
+    border-radius: 3px 0px 0px 0px;
+    border: 1px solid transparent;   
+    background-color: white;
+    color: #480ACC;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; 
+}
+
+.register-btn:hover {
+    background-color: #3608a1;
+    color: white;
+}
+
+.login-btn {
+    width: 113px;
+    height: 48px;
+    padding: 12px 24px;
+    border-radius: 3px 0px 0px 0px;
+    border: 1px solid transparent;
+    background-color: #480ACC;
+    color: white;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Adjust corner radius as needed */
+    
+}
+
+.login-btn:hover {
+    background-color: #7b49f0;
+}
+
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 5%;
+        position: relative; /* Allows absolute positioning of elements */
+    }
+
+    /* Reposition the logo to the top-left */
+    .logo {
+        margin-bottom: 10px;
+        position: absolute; /* Position logo at the top-left */
+        top: 10px;
+        left: 20px;
+        width: 100px; /* Smaller logo on mobile */
+        height: auto;
+    }
+
+    /* Reorder elements in navbar to: logo, register/login, sidebar */
+    .button-container {
+        margin-top: auto; /* Push buttons below the logo */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .register-btn, .login-btn {
+        width: 80px; /* Decrease button width */
+        height: 40px; /* Decrease button height */
+        padding: 10px 20px;
+        font-size: 12px; /* Smaller font for mobile */
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        position: absolute; /* Position the menu on top of content */
+        top: 50px; /* Adjust based on logo size */
+        left: -100%; /* Initially off-screen to the left */
+        right: 0;
+        background-color: #fff; /* Background color for sidebar */
+        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Sidebar shadow */
+        z-index: 1000;
+        height: 100vh; /* Full height for the sidebar */
+        overflow-y: auto;
+        padding: 20px 0;
+        opacity: 0; /* Initially invisible */
+        transition: all 0.3s ease-in-out; /* Smooth slide-in and fade-in */
+    }
+
+    /* When navbar has active class, show the menu */
+    .navbar.active ul {
+        left: 0; /* Slide the menu in */
+        opacity: 1; /* Fade the menu in */
+    }
+
+    /* Hamburger menu icon */
+    .menu-icon {
+        display: block; /* Show hamburger icon */
+        cursor: pointer;
+        position: absolute; /* Position hamburger on top-right */
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        z-index: 1010;
+    }
+
+    /* Style the individual list items in the menu */
+    ul li {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        color: #480ACC;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Hover effect for menu items */
+    ul li:hover {
+        background-color: #f4f4f4;
+    }
+}
+
+/* Hide the hamburger icon on larger screens (desktop) */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none; /* Hide the hamburger icon on desktop and larger screens */
+    }
+}

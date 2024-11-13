@@ -1,0 +1,93 @@
+/* Hero Section Container */
+.hero-section {
+    width: 100%;
+    height: 150vh; /* Full viewport height */
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(82, 189, 148, 0.2) 16.13%, #FFFFFF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    text-align: center;
+    position: relative;
+    padding: 0 20px; /* Add padding for responsive design */
+    opacity: 1; /* Set opacity to 1 for visibility */
+    overflow: hidden; /* Ensure content doesn’t overflow */
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 1200px;
+    width: 100%; /* Ensure full width within max limit */
+    margin-top: 50px; /* Adjust to push content down from the top */
+    padding: 20px;
+}
+
+/* Hero Title */
+.hero-title {
+    font-family: Inter;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 64px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-shadow: 0px 4px 4px 0px #00000040; /* Adding text shadow */
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+    font-size: 1.25rem; /* Slightly smaller text for subtitle */
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+/* Hero Rectangle */
+.hero-rectangle {
+    position: absolute;
+    width: 1222px;
+    height: 170px;
+    left: 350px;
+    top: 270px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px #00000040; /* Optional box-shadow */
+    display: flex;
+    justify-content: center; /* Center line horizontally */
+    align-items: center; /* Center line vertically */
+}
+
+/* Hero Line Inside the Rectangle */
+.hero-line {
+    width: 1100px; /* Line width */
+    height: 0px; /* No height to make it a line */
+    border: 1px solid #B1B1B1; /* Border for the line */
+    opacity: 0.8; /* Make the line slightly visible */
+    margin-top: -15px; /* Move the line upward by 10px (adjust this value) */
+    
+}
+
+/* Search Icon Container */
+.search-icon-container {
+    position: absolute;
+    top: 35px; /* Position it at the top of the rectangle */
+    left: 60px; /* Position it in the left corner */
+}
+
+/* Search Icon */
+.search-icon {
+    font-size: 30px; /* Adjust the size of the search icon */
+    color: #B1B1B1; /* Set a color for the search icon */
+}
+
+/* New Rectangle 132 */
+.hero-rectangle-132 {
+    position: absolute;
+    width: 450px;
+    height: 550px;
+    left: 353px;
+    top: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 48px rgba(10, 101, 204, 0.1);
+    border-radius: 50px;
+}
