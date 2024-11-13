@@ -81,13 +81,226 @@
 }
 
 /* New Rectangle 132 */
-.hero-rectangle-132 {
+.hero-Container-1 {
     position: absolute;
     width: 450px;
-    height: 550px;
+    height: 500px;
     left: 353px;
     top: 500px;
     background: #FFFFFF;
     box-shadow: 0px 12px 48px rgba(10, 101, 204, 0.1);
     border-radius: 50px;
+    padding: 50px;
+}
+
+/* Title inside Hero Container 1 */
+.hero-container-title {
+    width: 350px;
+    position: absolute;
+    top: 30px; /* Position title at the top */
+    left: 20px; /* Position title on the left */
+    font-size: 24px;
+    font-weight:bold;
+    color: #000000; /* Customize text color */
+    text-align: left; /* Ensure text is aligned to the left */
+    font-family: Inter;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+   padding-left: 15px;
+   padding-top: 15px;
+
+}
+
+/* Display Tech-1 Box under the Title */
+.display-tech-1 {
+    position: absolute;
+    width: 400px; /* Width as specified */
+    height: 65px; /* Height as specified */
+    top: 120px; /* Adjust to position it below the title */
+    left: 25px; /* Adjust horizontal position */
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 20px; /* Rounded corners */
+    border: 1px solid #DCDCDC; /* Light border */
+    opacity: 0.8; /* Slight opacity */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+/* Hover effect */
+.display-tech-1:hover {
+    background-color: #f0f0f0; /* Lighter background color on hover */
+    box-shadow: 0px 6px 12px rgba(3, 33, 202, 0.1); /* Slight shadow on hover */
+    opacity: 1; /* Make it fully opaque on hover */
+}
+/* Ellipsis Icon */
+.ellipsis-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 10px; /* Move left to position the icon */
+    top: 20px; /* Move the icon downwards */
+    color: #000000; /* Customize color */
+}
+
+.web-tech {
+    font-size: 25px;
+    position: absolute;
+    left: 10px; /* Move left to position the icon */
+    top: 20px; /* Move the icon downwards */
+    color: #000000; /* Customize color */
+}
+
+/* Web Title */
+.web-title {
+    font-size: 18px;
+    position: absolute;
+    top: 15px; /* Move the title downwards */
+    left: 35%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    color: #000000; /* Customize color */
+}
+
+.web-p{
+    font-size: 12px;
+    position: absolute;
+    top: 35px; /* Move the title downwards */
+    left: 26%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    color: #000000; /* Customize color */
+    padding-top: 2px;
+}
+
+
+.display-tech-2 {
+    position: absolute;
+    width: 400px; /* Width as specified */
+    height: 65px; /* Height as specified */
+    top: 200px; /* Adjust to position it below the title */
+    left: 25px; /* Adjust horizontal position */
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 20px; /* Rounded corners */
+    border: 1px solid #DCDCDC; /* Light border */
+    opacity: 0.8; /* Slight opacity */
+    display: flex;
+    align-items: center; /* Center items vertically */
+   
+}
+.display-tech-2:hover {
+    background-color: #f0f0f0; /* Lighter background color on hover */
+    box-shadow: 0px 6px 12px rgba(3, 33, 202, 0.1); /* Slight shadow on hover */
+    opacity: 1; /* Make it fully opaque on hover */
+}
+.machin-lear{
+    font-size: 25px;
+    position: absolute;
+    left: 10px; /* Move left to position the icon */
+    top: 20px; /* Move the icon downwards */
+    color: #000000; /* Customize color */
+}
+
+.machin-title{
+    font-size: 18px;
+    position: absolute;
+    top: 15px; /* Move the title downwards */
+    left: 35%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    color: #000000; /* Customize color */
+}
+.machin-p{
+    font-size: 12px;
+    position: absolute;
+    top: 35px; /* Move the title downwards */
+    left: 26%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    color: #000000; /* Customize color */
+    padding-top: 2px;
+}
+
+.display-tech-3 {
+    position: absolute;
+    width: 400px; /* Width as specified */
+    height: 65px; /* Height as specified */
+    top: 280px; /* Adjust to position it below the title */
+    left: 25px; /* Adjust horizontal position */
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 20px; /* Rounded corners */
+    border: 1px solid #DCDCDC; /* Light border */
+    opacity: 0.8; /* Slight opacity */
+    display: flex;
+    align-items: center; /* Center items vertically */
+   
+}
+.display-tech-3:hover {
+    background-color: #f0f0f0; /* Lighter background color on hover */
+    box-shadow: 0px 6px 12px rgba(3, 33, 202, 0.1); /* Slight shadow on hover */
+    opacity: 1; /* Make it fully opaque on hover */
+}
+.data-sci{
+    font-size: 25px;
+    position: absolute;
+    left: 10px; /* Move left to position the icon */
+    top: 20px; /* Move the icon downwards */
+    color: #000000; /* Customize color */
+}
+.data-title{
+    font-size: 18px;
+    position: absolute;
+    top: 15px; /* Move the title downwards */
+    left: 30%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    color: #000000; /* Customize color */
+}
+
+.data-p{
+    font-size: 12px;
+    position: absolute;
+    top: 35px; /* Move the title downwards */
+    left: 26%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    color: #000000; /* Customize color */
+    padding-top: 2px;
+}
+
+.display-tech-4 {
+    position: absolute;
+    width: 400px; /* Width as specified */
+    height: 65px; /* Height as specified */
+    top: 360px; /* Adjust to position it below the title */
+    left: 25px; /* Adjust horizontal position */
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 20px; /* Rounded corners */
+    border: 1px solid #DCDCDC; /* Light border */
+    opacity: 0.8; /* Slight opacity */
+    display: flex;
+    align-items: center; /* Center items vertically */
+   
+}
+.display-tech-4:hover {
+    background-color: #f0f0f0; /* Lighter background color on hover */
+    box-shadow: 0px 6px 12px rgba(3, 33, 202, 0.1); /* Slight shadow on hover */
+    opacity: 1; /* Make it fully opaque on hover */
+}
+.business-an{
+    font-size: 25px;
+    position: absolute;
+    left: 10px; /* Move left to position the icon */
+    top: 20px; /* Move the icon downwards */
+    color: #000000; /* Customize color */
+}
+.business-title{
+    
+    font-size: 18px;
+    position: absolute;
+    top: 15px; /* Move the title downwards */
+    left: 36%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    color: #000000; /* Customize color */
+}
+
+.business-p{
+    font-size: 12px;
+    position: absolute;
+    top: 35px; /* Move the title downwards */
+    left: 26%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    color: #000000; /* Customize color */
+    padding-top: 2px;
 }
